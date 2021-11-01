@@ -33,14 +33,15 @@ SELECT name FROM city WHERE countrycode='SMR';
 -- headed to, but doesn't end the same. Find out the city, and do another search for what country it's in. Hurry!
 
 -- Write SQL query here
-SELECT countrycode, name FROM city WHERE countrycode='ARG' AND name='San Miguel';
+SELECT countrycode, name FROM city WHERE name LIKE 'Serra%';
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at the airport, and is headed towards
 -- the capital! Look up the country's capital, and get there pronto! Send us the name of where you're headed and we'll
 -- follow right behind you!
 
 -- Write SQL query here
-SELECT code, name, capital FROM country WHERE code='ARG';
+SELECT code, name, capital FROM country WHERE code='BRA';
+SELECT id, countrycode, name FROM city WHERE id='211';
 
 -- Clue #7: She knows we're on to her – her taxi dropped her off at the international airport, and she beat us to
 -- the boarding gates. We have one chance to catch her, we just have to know where she's heading and beat her to the
